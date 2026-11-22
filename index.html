@@ -141,7 +141,9 @@ svg { display: block; }
 .title-logo { margin: 0 0 6px; width: min(100%, 620px, calc(38vh * 3.3)); }
 .title-logo svg { width: 100%; height: auto; }
 .title-sub { margin: 4px 0 6px; font-size: clamp(20px, 2.3vw, 26px); font-weight: 700; color: #33475A; }
-.title-lead { margin: 0 0 12px; font-size: 19px; color: var(--ink-2); max-width: 560px; }
+.title-lead { margin: 0 0 22px; font-size: 19px; color: var(--ink-2); max-width: 560px; }
+.title-kicker { font-size: 18px; font-weight: 800; }
+.title-sub { margin-top: 10px; }
 .title-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 .chip { font-size: 15px; font-weight: 700; color: #4A5A6B; background: #FFF8EE; border: 1px solid #DDD3C3; border-radius: 999px; padding: 6px 12px; }
 .title-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -709,13 +711,10 @@ body.reduce-motion svg * { animation: none !important; }
     <div class="title-layout">
       <div class="title-hero" id="title-hero" aria-hidden="true"></div>
       <div class="title-copy">
-        <div class="title-kicker">초등 5~6학년 · <span style="color:#0A2472">1단원 AI는 우리 생활을 어떻게 바꿀까요 · 1차시</span></div>
+        <div class="title-kicker"><span style="color:#0A2472">01 이것도 AI일까?</span></div>
         <h1 class="title-logo" id="title-logo"><span class="sr-only">이음마을 AI 현장 조사</span></h1>
-        <p class="title-sub">같아 보이는 기기, 무엇이 다르게 작동할까?</p>
-        <p class="title-lead">우리 주변의 기기들은 어떤 일을 하며, 그중 AI는 어떻게 사람을 도울까? 학생 조사팀이 로봇 청소기와 함께 이음마을 여덟 곳의 작동 단서를 직접 <span style="color:#0A2472">확인해요</span>.</p>
-        <div class="title-meta" aria-label="플레이 정보">
-          <span class="chip">약 12~15분</span><span class="chip">핵심 조사 8곳 + AI 기능 4가지</span>
-        </div>
+        <p class="title-sub">무엇을 보고 인공지능인지 알아볼 수 있을까요?</p>
+        <p class="title-lead">로봇 청소기와 함께 이음마을 여덟 곳을 돌아보며 인공지능을 찾아요.</p>
         <div class="title-actions">
           <button class="btn3d primary" type="button" id="btn-start">조사 시작</button>
           <button class="btn3d ghost" type="button" id="btn-settings-title">설정</button>
@@ -801,7 +800,7 @@ body.reduce-motion svg * { animation: none !important; }
 
   const DATA_VERSION = 5;
   const GAME_TITLE = "이음마을 AI 현장 조사";
-  const GAME_SUB = "같아 보이는 기기, 무엇이 다르게 작동할까?";
+  const GAME_SUB = "무엇을 보고 인공지능인지 알아볼 수 있을까요?";
 
   /* ---------- 핵심 사례 8개 (수정 기획 7장) + 선택 사례 6개 (유지) ---------- */
   const QUESTIONS = [
